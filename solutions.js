@@ -9,7 +9,7 @@
 //     let sum = 0;
 //     for (let i = 1; i < n; i++) {
 //         sum += i * (i + 1);
-//     }
+//     } 
 //     return sum;
 // }
 
@@ -243,6 +243,27 @@
 // let result = getDifMaxMin(str);
 // console.log(result);
 
+//// 10 ///
+// Book nomli contructor yarating uning title, pages, author kabi xususiyatlari bo'lsin. getInfo() nomli prototypega method yozing.
+
+// Input: let b1 = new Book("Halqa", 200, "Akrom Malik");
+// // p1.getInfo();
+// Output: "200 betlik Halqa kitobi Akrom Malik tomonidan yozilgan."
 
 
 
+
+// class Book {
+//     constructor(title, pages, author) {
+//         this.title = title;
+//         this.pages = pages;
+//         this.author = author;
+//     }
+
+//     getInfo() {
+//         return `${this.pages} betlik ${this.title} kitobi ${this.author} tomonidan yozilgan.`;
+//     }
+// }
+
+// let b1 = new Book("Halqa", 200, "Akrom Malik");
+// console.log(b1.getInfo()); 
