@@ -215,3 +215,34 @@
 // console.log(getCloseSum(arr));
 
 
+// 8 Satrdagi eng uzun va eng qisqa so'zlarni uzunligini ayirmasini qaytaruvchi getDifMaxMin(str) funksiya tuzing
+
+// Input: let str =
+//     "Satrdagi eng uzun va eng qisqa so'zlarni uzunligini ayirmasini qaytaruvchi funksiya tuzing";
+// // min_word: va
+// // max_word: qaytaruvchi
+// // getDifMaxMin(str)
+// Output: 9
+
+// function getDifMaxMin(str) {
+//     let words = str.split(' ');
+//     let min_word = words[0];
+//     let max_word = words[0];
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i].length < min_word.length) {
+//             min_word = words[i];
+//         }
+//         if (words[i].length > max_word.length) {
+//             max_word = words[i];
+//         }
+//     }
+//     return max_word.length - min_word.length;
+// }
+
+// let str = "Satrdagi eng uzun va eng qisqa so'zlarni uzunligini ayirmasini qaytaruvchi funksiya tuzing";
+// let result = getDifMaxMin(str);
+// console.log(result);
+
+
+
+
