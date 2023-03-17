@@ -59,8 +59,31 @@
 // // getTotalPrice(ids, products)
 // Output: 900
 
+function getTotalPrice(products, ids) {
+    let totalPrice = 0;
+    for (let i = 0; i < products.length; i++) {
+        if (ids.includes(products[i].id)) {
+            totalPrice += products[i].price;
+        }
+    }
+    return totalPrice;
+}
 
-//   3-bosh
+const ids = [1, 4, 8];
+const products = [
+    { id: 1, name: 'Bike', price: 100 },
+    { id: 2, name: 'TV', price: 400 },
+    { id: 3, name: 'Album', price: 800 },
+    { id: 4, name: 'Book', price: 600 },
+    { id: 5, name: 'Phone', price: 500 },
+    { id: 6, name: 'Computer', price: 1000 },
+    { id: 7, name: 'Skate', price: 300 },
+    { id: 8, name: 'Keyboard', price: 200 },
+    { id: 9, name: 'Bottle', price: 700 },
+];
+
+console.log(getTotalPrice(products, ids));
+
 
 
 // 7. Yonidagi qo’shnilarining yig'indisidan iborat yangi massiv qaytaruvchi getCloseSum(arr) funksiya tuzilsin.
@@ -69,21 +92,21 @@
 // Output: [15, 22, 20, 26, 22, 15, 10, 7]
 
 
-function getCloseSum(arr) {
-    const newArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        let sum = 0;
-        for (let j = 0; j < arr.length; j++) {
-            if (j !== i) {
-                sum += arr[j];
-            }
-        }
-        newArr.push(sum);
-    }
-    return newArr;
-}
+// function getCloseSum(arr) {
+//     const newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let sum = 0;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (j !== i) {
+//                 sum += arr[j];
+//             }
+//         }
+//         newArr.push(sum);
+//     }
+//     return newArr;
+// }
 
-const arr = [10, 5, 7, 8, 11, 3, 1, 6];
-console.log(getCloseSum(arr));
+// const arr = [10, 5, 7, 8, 11, 3, 1, 6];
+// console.log(getCloseSum(arr));
 
 
