@@ -84,6 +84,84 @@
 
 // console.log(getTotalPrice(products, ids)); // Output: 900
 
+// 4. Satrdagi undoshlar va unlilar soni o’rtasidagi farqni topuvchi getDif() funksiya tuzilsin.
+
+//     Input: let str = "Men kelajakda kuchli dasturchi bo'laman";
+// // getDif(str)
+// Output: 8
+
+
+// function getDif(str) {
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let strVowels = 0;
+//     let strConsonants = 0;
+
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i].toLowerCase();
+//         if (vowels.includes(char)) {
+//             strVowels++;
+//         } else if (/[a-z]/.test(char)) {
+//             strConsonants++;
+//         }
+//     }
+
+//     return Math.abs(strVowels - strConsonants);
+// }
+
+// let str = "Mening ismim Orif Men kelajakda kuchli dasturchi bo'laman";
+// console.log(getDif(str));
+
+
+
+
+// 5. Sonlardan iborat massiv argument sifatida kiritilganda, kalitlari o’sha sonlardan, qiymati esa ularning necha xonali ekanligidan iborat bo’lgan
+// object qaytaradigan getNumberDigit(arr) funksiya tuzilsin.
+
+//     Input: [10, 453, 89, 589, 9034, 28574, 184, 73901, 5];
+// Output:
+// {
+//     '10': 2,
+//         '453': 3,
+//             '89': 2,
+//                 '589': 3,
+//                     '9034': 4,
+//                         '28574': 5,
+//                             '184': 3,
+//                                 '73901': 5
+//     '5': 1,
+// }
+
+// function getNumberDigit(arr) {
+//     let result = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         let num = arr[i];
+//         let digitCount = num.toString().length;
+//         result[num] = digitCount;
+//     }
+//     return result;
+// }
+
+// let arr = [10, 453, 89, 589, 9034, 28574, 184, 73901, 5];
+// console.log(getNumberDigit(arr));
+
+
+
+// 6. Object ichidagi truthy va falsy qiymatga ega propertylardan alohida objectlar tuzilsin.
+
+//     Input: obj = {
+//         a: false,
+//         b: 12,
+//         c: '',
+//         d: "salom",
+//         e: 102,
+//         f: null,
+//         g: -1
+//     }
+// Output:
+// falsy: { a: false, c: '', f: null }
+// truthy: { b: 12, d: "salom", e: 102, g: -1 }
+
+
 
 
 // 7. Yonidagi qo’shnilarining yig'indisidan iborat yangi massiv qaytaruvchi getCloseSum(arr) funksiya tuzilsin.
@@ -108,4 +186,5 @@
 
 // const arr = [10, 5, 7, 8, 11, 3, 1, 6];
 // console.log(getCloseSum(arr));
+
 
