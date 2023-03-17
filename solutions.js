@@ -162,6 +162,33 @@
 // truthy: { b: 12, d: "salom", e: 102, g: -1 }
 
 
+// function separateTruthyFalsy(obj) {
+//     let truthy = {};
+//     let falsy = {};
+//     for (let key in obj) {
+//         if (obj[key]) {
+//             truthy[key] = obj[key];
+//         } else {
+//             falsy[key] = obj[key];
+//         }
+//     }
+//     return { truthy, falsy };
+// }
+
+// let obj = {
+//     a: false,
+//     b: 12,
+//     c: '',
+//     d: "salom",
+//     e: 102,
+//     f: null,
+//     g: -1
+// };
+
+// let result = separateTruthyFalsy(obj);
+// console.log("truthy: ", result.truthy);
+// console.log("falsy: ", result.falsy);
+
 
 
 // 7. Yonidagi qo’shnilarining yig'indisidan iborat yangi massiv qaytaruvchi getCloseSum(arr) funksiya tuzilsin.
